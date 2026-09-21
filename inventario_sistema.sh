@@ -14,9 +14,7 @@ imprimir_cabecera "INFORME DE HARDWARE Y SOFTWARE DEL SISTEMA"
 echo "Host: $(hostname)" | tee -a "$OUTPUT_FILE"
 echo "Fecha de captura: $(date)" | tee -a "$OUTPUT_FILE"
 
-# =====================================================================
 # 1. HARDWARE
-# =====================================================================
 imprimir_cabecera "1. COMPONENTES DE HARDWARE"
 
 # CPU
@@ -53,9 +51,7 @@ fi
 echo -e "\n[+] Dispositivos de Red:" | tee -a "$OUTPUT_FILE"
 ip -br link show | tee -a "$OUTPUT_FILE"
 
-# =====================================================================
 # 2. SOFTWARE
-# =====================================================================
 imprimir_cabecera "2. COMPONENTES DE SOFTWARE"
 
 # Sistema Operativo y Kernel
