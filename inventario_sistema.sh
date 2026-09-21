@@ -10,6 +10,7 @@ imprimir_cabecera() {
     echo "=================================================================" | tee -a "$OUTPUT_FILE"
 }
 
+
 imprimir_cabecera "INFORME DE HARDWARE Y SOFTWARE DEL SISTEMA"
 echo "Host: $(hostname)" | tee -a "$OUTPUT_FILE"
 echo "Fecha de captura: $(date)" | tee -a "$OUTPUT_FILE"
