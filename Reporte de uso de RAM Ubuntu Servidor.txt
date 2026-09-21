@@ -1,0 +1,56 @@
+========================================================
+  REPORTE DEL SISTEMA (UBUNTU AWS EC2 - t3.micro)       
+  Fecha y hora: Mon Sep 21 04:56:38 UTC 2026                                 
+========================================================
+
+[1. INFORMACIÓN DE HARDWARE]
+--- CPU (vCPU / Arquitectura) ---
+Modelo: Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz
+Núcleos lógicos detectados: 2
+Frecuencia base (MHz): 2499.994
+
+--- Memoria RAM y Swap (Física y Virtual) ---
+Tipo	Total(MB)	Usado(MB)	Libre(MB)
+Mem:	908		788		141
+Swap:	0		0		0
+
+--- Almacenamiento (Disco EBS / Particiones) ---
+Filesystem      Type      Size  Used Avail Use% Mounted on
+/dev/root       ext4      6.7G  4.1G  2.6G  62% /
+efivarfs        efivarfs  128K  3.3K  120K   3% /sys/firmware/efi/efivars
+/dev/nvme0n1p13 ext4      989M  230M  692M  25% /boot
+/dev/nvme0n1p15 vfat      105M  6.3M   99M   7% /boot/efi
+
+--- Dispositivos / Hardware Virtual ---
+Tipo de virtualización: t3.micro
+
+[2. INFORMACIÓN DE SOFTWARE]
+--- Sistema Operativo y Kernel ---
+Kernel: 7.0.0-1009-aws (x86_64)
+Ubuntu 26.04 LTS
+
+--- Tiempo encendido y Carga del sistema ---
+ 04:56:38 up 8 min,  4 users,  load average: 0.67, 0.27, 0.12
+
+--- Top 5 Procesos con mayor uso de Memoria RAM ---
+USUARIO  PID     %CPU   %MEM   COMANDO
+root         616  0.0  1.9 networkd-dispat
+root         741  0.0  1.9 unattended-upgr
+root         597  0.0  1.6 apache2
+root         623  0.8  1.2 snapd
+www-data     856  0.0  1.2 apache2
+
+--- Top 5 Procesos con mayor uso de CPU ---
+USUARIO  PID     %CPU   %MEM   COMANDO
+root         623  0.8  1.2 snapd
+root         989  0.4  0.9 amazon-ssm-agen
+root           1  0.3  1.1 systemd
+ubuntu      4296  0.1  0.3 bash
+ubuntu      1293  0.0  0.6 sshd-session
+
+--- Conteo total de tareas/procesos ---
+Total de procesos corriendo en el SO: 135
+
+========================================================
+Reporte finalizado exitosamente.
+========================================================
